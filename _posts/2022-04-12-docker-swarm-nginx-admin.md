@@ -3,9 +3,7 @@ title: How to run NGINX-Admin using Docker Swarm?
 excerpt_separator: <!--end_excerpt-->
 ---
 
-Nginx-Admin is a very simple method to set a NGINX Ingress.
-
-In this tutorial we present a very simple way to run it on your for your Docker Swarm cluster.
+Nginx-Admin is a very simple method to set a NGINX Ingress. In this tutorial we present a very simple way to run it on your for your Docker Swarm cluster.
 
 <!--end_excerpt-->
 
