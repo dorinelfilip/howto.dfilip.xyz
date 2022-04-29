@@ -1,9 +1,9 @@
 ---
-title: How to run NGINX-Admin using Docker Swarm?
+title: How to run NGINX-Proxy-Manager using Docker Swarm?
 excerpt_separator: <!--end_excerpt-->
 ---
 
-Nginx-Admin is a very simple method to set a NGINX Ingress. In this tutorial we present a very simple way to run it on your for your Docker Swarm cluster.
+NGINX-Proxy-Manager is a very simple method to set a NGINX Ingress. In this tutorial we present a very simple way to run it on your for your Docker Swarm cluster.
 
 <!--end_excerpt-->
 
