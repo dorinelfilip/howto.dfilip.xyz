@@ -1,5 +1,5 @@
 ---
-title: How to make a socket address as reuseable using setsockopt()? 
+title: How to make a socket address reuseable using setsockopt()? 
 excerpt_separator: <!--end_excerpt-->
 ---
 
