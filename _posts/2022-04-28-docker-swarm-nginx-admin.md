@@ -38,10 +38,15 @@ services:
         published: 443
         protocol: tcp
         mode: host
+
       - "81:81"
     volumes:
-      - ./data:/data
-      - ./letsencrypt:/etc/letsencrypt
+      - data:/data
+      - letsencrypt:/etc/letsencrypt
+
+volumes:
+  data:
+  letsencrypt:
 
 networks:
   proxy_net:
