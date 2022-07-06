@@ -3,6 +3,10 @@ title: How to make a docker-compose application to autostart as a service?
 excerpt_separator: <!--end_excerpt-->
 ---
 
+In this tutorial we explain how to enable on-boot autostart for a docker-compose application using systemd on Ubuntu.
+
+<!--end_excerpt-->
+
 # On Ubuntu
 
 Create a file `/etc/systemd/system/docker-compose-example.service` as following:
@@ -25,4 +29,12 @@ TimeoutStartSec=0
 
 [Install]
 WantedBy=multi-user.target
+```
+
+To start the service use systemctl:
+```
+# Autostart systemd service
+sudo systemctl enable docker-compose-example.service
+# Start systemd service now
+sudo systemctl start docker-compose-example.service
 ```
