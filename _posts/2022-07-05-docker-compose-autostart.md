@@ -23,12 +23,18 @@ RemainAfterExit=yes
 User=myuser # CHANGE THIS
 Group=mygroup # CHANGE THIS
 WorkingDirectory=/home/dockermgr/service # CHANGE THIS
-ExecStart=/usr/local/bin/docker-compose up -d
-ExecStop=/usr/local/bin/docker-compose down
+ExecStart=/usr/bin/docker compose up -d
+ExecStop=/usr/bin/docker compose down
 TimeoutStartSec=0
 
 [Install]
 WantedBy=multi-user.target
+```
+
+On some older systems, Docker Compose might be standalone. In this case, you should change two lines as:
+```
+ExecStart=/usr/local/bin/docker-compose up -d
+ExecStop=/usr/local/bin/docker-compose down
 ```
 
 To start the service use systemctl:
